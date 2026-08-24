@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg width="1000" height="1000" xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+	<pattern id="damask" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+	  <rect width="100" height="100" fill="#180810"/>
+	  <!-- Diamond lattice -->
+	  <path d="M50,2 L98,50 L50,98 L2,50 Z" fill="none" stroke="#30102a" stroke-width="0.7" opacity="0.9"/>
+	  <path d="M50,16 L84,50 L50,84 L16,50 Z" fill="none" stroke="#28091e" stroke-width="0.4" opacity="0.7"/>
+	  <!-- Center floral rosette -->
+	  <g transform="translate(50,50)">
+		<ellipse cx="0" cy="-15" rx="4" ry="8.5" fill="#2e1028" opacity="0.9"/>
+		<ellipse cx="0" cy="15" rx="4" ry="8.5" fill="#2e1028" opacity="0.9"/>
+		<ellipse cx="-15" cy="0" rx="8.5" ry="4" fill="#2e1028" opacity="0.9"/>
+		<ellipse cx="15" cy="0" rx="8.5" ry="4" fill="#2e1028" opacity="0.9"/>
+		<ellipse cx="-10.5" cy="-10.5" rx="3" ry="7" fill="#2e1028" opacity="0.7" transform="rotate(-45, -10.5, -10.5)"/>
+		<ellipse cx="10.5" cy="-10.5" rx="3" ry="7" fill="#2e1028" opacity="0.7" transform="rotate(45, 10.5, -10.5)"/>
+		<ellipse cx="-10.5" cy="10.5" rx="3" ry="7" fill="#2e1028" opacity="0.7" transform="rotate(45, -10.5, 10.5)"/>
+		<ellipse cx="10.5" cy="10.5" rx="3" ry="7" fill="#2e1028" opacity="0.7" transform="rotate(-45, 10.5, 10.5)"/>
+		<circle cx="0" cy="0" r="5" fill="#2e1028"/>
+		<circle cx="0" cy="0" r="2.5" fill="#3a1535"/>
+	  </g>
+	  <!-- Corner quarter blooms -->
+	  <ellipse cx="0" cy="0" rx="2.5" ry="5" fill="#2e1028" opacity="0.7" transform="rotate(45, 0, 0)"/>
+	  <ellipse cx="100" cy="0" rx="2.5" ry="5" fill="#2e1028" opacity="0.7" transform="rotate(-45, 100, 0)"/>
+	  <ellipse cx="0" cy="100" rx="2.5" ry="5" fill="#2e1028" opacity="0.7" transform="rotate(-45, 0, 100)"/>
+	  <ellipse cx="100" cy="100" rx="2.5" ry="5" fill="#2e1028" opacity="0.7" transform="rotate(45, 100, 100)"/>
+	  <!-- Midpoint dots -->
+	  <circle cx="50" cy="0" r="1.8" fill="#2e1028" opacity="0.8"/>
+	  <circle cx="50" cy="100" r="1.8" fill="#2e1028" opacity="0.8"/>
+	  <circle cx="0" cy="50" r="1.8" fill="#2e1028" opacity="0.8"/>
+	  <circle cx="100" cy="50" r="1.8" fill="#2e1028" opacity="0.8"/>
+	</pattern>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#damask)"/>
+</svg>
