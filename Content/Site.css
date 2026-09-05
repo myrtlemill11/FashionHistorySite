@@ -1,10 +1,4 @@
 ﻿
-
-title {
-    color: #f0e4d0;
-    position: center;
-    text-emphasis-color: azure;
-}
 body {
     background-image: url('../Images/wallpaper.svg');
     background-size: cover;
@@ -14,41 +8,74 @@ body {
     height: 100%;
     min-width: 100%;
     margin: 0;
-    text-decoration-color: #f0e4d0;
+    color: #f0e4d0;
+    font-family: 'Baskerville Old Face';
 }
+
+#dressPic {
+    
+    position:center;
+    top: 0px;
+    left: 50%;
+    
+}
+
 /* Wrapping element 
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
     margin-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 16px;
+    text-align:center;
+}
+.container {
+    
+}
+.navbar-navbar-expand-sm-navbar-toggleable-sm-navbar-dark-bg-dark {
+    top: 15px;
+    position: sticky;
 }
 
+/*Setting up the navigation bar situation*/
+.navbar-brand {
+    color: #f0e4d0;
+    font-family:'Vladimir Script';
+    text-decoration:none;
+    font-size:50px;
+
+}
+.nav li {
+    display: inline-block;
+}
+
+    .navbar-brand:hover {
+        background-color: #111111;
+        color: azure;
+    }
 
 ul {
-    list-style-type: none;
-    /* margin: 0;
-    padding: 0; */
-    display: flex;
-    color: azure;
-    display: flex;
-    height: 4rem;
-    align-items: center;
-    width: 100%;
-    border-radius: 10px;
+    list-style-type:none;
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
 }
+/*ul a {
+    float: right;
+    display: bl
+}*/
 
-    ul li a {
+    ul a {
+        top: 0px;
         color: #f0e4d0;
         padding: 14px 16px;
+        text-align: center;
+        float: right;
         text-decoration: none;
-        display: inline-flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+
     }
 
         ul li a:hover {
             background-color: #111111;
+            color: azure;
             justify-content: space-between;
         }
 /* Set widths on the form inputs since otherwise they're 100% wide 
@@ -73,5 +100,62 @@ html.wizmage-running > body {
         
     }
 }
-*/ 
-    
+*/
+#titleWeb {
+    position: absolute;
+    text-align: center;
+    top: 400px;
+    left: 20%;
+    font-size: 80px;
+}
+
+.lead {
+    position: absolute;
+    text-align: center;
+    top: 600px;
+    left: 38%;
+}
+
+#scrollMessage {
+    position: absolute;
+    text-align: center;
+    top: 800px;
+    left: 49%;
+}
+
+/*Grid stuff*/
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #220d18;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+    .grid a {
+        /* so we can position our shiny gradient *relative* to the button itself */
+        position: relative;
+        /* then, make sure our shiny effect */
+        /* doesn't "overflow" outside of our button */
+        overflow: hidden;
+        background-color: #220d18;
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+        color: antiquewhite;
+        text-decoration: none;
+    }
+
+        .grid a::after {
+            /* all pseudo-elements need "content" to work. We'll make it empty here */
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            /* make sure the gradient isn't too bright */
+            opacity: 0.6;
+            /* add a circular gradient that fades out on the edges */
+            background: radial-gradient(white, #3984ff00 80%);
+            /*
+            background-color: rgba(48, 16, 36, 0.9);*/
+        }

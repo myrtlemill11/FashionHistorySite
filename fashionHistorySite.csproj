@@ -139,6 +139,7 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\2010EJ4165.jpg" />
+    <Content Include="Images\dress.svg" />
     <Content Include="Images\wallpaper.svg" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />

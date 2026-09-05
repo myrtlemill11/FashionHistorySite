@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<svg viewBox="0 0 400 750" xmlns="http://www.w3.org/2000/svg" width="800" height="1500">
+  <defs>
+    <linearGradient id="skirtG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6e3858"/>
+      <stop offset="28%" stop-color="#9a6080"/>
+      <stop offset="50%" stop-color="#b27898"/>
+      <stop offset="72%" stop-color="#9a6080"/>
+      <stop offset="100%" stop-color="#6e3858"/>
+    </linearGradient>
+    <linearGradient id="bodiceG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a5070"/>
+      <stop offset="100%" stop-color="#6a3858"/>
+    </linearGradient>
+    <linearGradient id="skinG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8c8b0"/>
+      <stop offset="100%" stop-color="#d8b898"/>
+    </linearGradient>
+    <radialGradient id="skirtSheen" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#c890a8" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#6e3858" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- SKIRT -->
+  <path d="M 192,312 C 165,328 108,382 72,468 C 42,538 32,618 40,674 C 48,712 80,736 112,742 L 288,742 C 320,736 352,712 360,674 C 368,618 358,538 328,468 C 292,382 235,328 208,312 Z" fill="url(#skirtG)"/>
+  <path d="M 192,312 C 165,328 108,382 72,468 C 42,538 32,618 40,674 C 48,712 80,736 112,742 L 288,742 C 320,736 352,712 360,674 C 368,618 358,538 328,468 C 292,382 235,328 208,312 Z" fill="url(#skirtSheen)"/>
+  <path d="M 200,314 L 200,740" stroke="#5a2848" stroke-width="2" opacity="0.25"/>
+  <path d="M 57,490 C 130,474 175,469 200,468 C 225,469 270,474 343,490" fill="none" stroke="#dab8cc" stroke-width="2" opacity="0.55" stroke-linecap="round"/>
+  <path d="M 44,572 C 122,552 170,546 200,545 C 230,546 278,552 356,572" fill="none" stroke="#dab8cc" stroke-width="2" opacity="0.5" stroke-linecap="round"/>
+  <path d="M 52,650 C 126,633 173,628 200,627 C 227,628 274,633 348,650" fill="none" stroke="#dab8cc" stroke-width="2" opacity="0.45" stroke-linecap="round"/>
+  <path d="M 112,742 C 134,754 156,758 175,752 C 186,747 192,742 200,746 C 208,742 214,747 225,752 C 244,758 266,754 288,742" fill="#c4a0b8" opacity="0.7"/>
+
+  <!-- BODICE -->
+  <path d="M 164,172 C 154,195 149,252 152,314 L 200,318 L 248,314 C 251,252 246,195 236,172 Z" fill="url(#bodiceG)"/>
+  <path d="M 182,212 L 200,218 L 218,212 L 222,316 L 200,318 L 178,316 Z" fill="#9e6880" opacity="0.38"/>
+  <path d="M 200,174 L 200,316" stroke="#c090a8" stroke-width="0.8" opacity="0.35"/>
+  <path d="M 164,172 L 200,220 L 236,172 Z" fill="#58224a" opacity="0.32"/>
+
+  <!-- WAIST BOW -->
+  <path d="M 200,310 C 187,299 180,285 190,277 C 196,273 200,281 200,285 C 200,281 204,273 210,277 C 220,285 213,299 200,310 Z" fill="#e0b8cc"/>
+  <circle cx="200" cy="306" r="4.5" fill="#c090a8"/>
+  <circle cx="200" cy="306" r="2.2" fill="#a87090"/>
+
+  <!-- NECKLINE FICHU -->
+  <path d="M 164,172 C 177,160 192,154 200,157 C 208,154 223,160 236,172" fill="none" stroke="#eed4e0" stroke-width="2.8" opacity="0.65" stroke-linecap="round"/>
+  <path d="M 166,174 C 179,184 193,190 200,194 C 207,190 221,184 234,174" fill="#d8b8c8" opacity="0.42"/>
+
+  <!-- LEFT SLEEVE -->
+  <path d="M 164,174 C 146,182 120,208 103,252 C 92,278 94,305 103,310 L 116,313 C 135,298 146,272 153,245 C 161,217 163,190 164,174 Z" fill="url(#bodiceG)"/>
+  <path d="M 101,308 C 91,322 89,337 98,342 C 109,347 125,337 130,324 C 126,312 113,307 101,308 Z" fill="#d4b0c4"/>
+
+  <!-- RIGHT SLEEVE -->
+  <path d="M 236,174 C 254,182 280,208 297,252 C 308,278 306,305 297,310 L 284,313 C 265,298 254,272 247,245 C 239,217 237,190 236,174 Z" fill="url(#bodiceG)"/>
+  <path d="M 299,308 C 309,322 311,337 302,342 C 291,347 275,337 270,324 C 274,312 287,307 299,308 Z" fill="#d4b0c4"/>
+
+  <!-- NECK -->
+  <path d="M 185,133 L 215,133 L 218,170 L 182,170 Z" fill="url(#skinG)"/>
+
+  <!-- HEAD -->
+  <ellipse cx="200" cy="96" rx="40" ry="44" fill="url(#skinG)"/>
+  <path d="M 193,103 C 194,106 197,108 200,108 C 203,108 206,106 207,103" fill="none" stroke="#b89080" stroke-width="1" opacity="0.55"/>
+  <ellipse cx="191" cy="95" rx="3.2" ry="2.2" fill="#b89080" opacity="0.35"/>
+  <ellipse cx="209" cy="95" rx="3.2" ry="2.2" fill="#b89080" opacity="0.35"/>
+
+  <!-- HAIR -->
+  <path d="M 160,88 C 160,52 170,22 187,14 C 194,10 206,10 213,14 C 230,22 240,52 240,88 C 252,64 255,38 247,24 C 260,32 264,58 256,82 C 240,60 228,54 218,62 C 212,46 206,40 200,40 C 194,40 188,46 182,62 C 172,54 160,60 144,82 C 136,58 140,32 153,24 C 145,38 148,64 160,88 Z" fill="#4a2838"/>
+  <path d="M 160,88 C 148,100 145,118 154,128" fill="none" stroke="#5a3848" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M 240,88 C 252,100 255,118 246,128" fill="none" stroke="#5a3848" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M 200,40 C 196,26 194,10 199,2 C 200,-1 201,2 202,8 C 206,20 204,34 200,40 Z" fill="#c8a0b0" opacity="0.88"/>
+  <ellipse cx="200" cy="4" rx="4" ry="4" fill="#e0c0d0" opacity="0.9"/>
+  <circle cx="200" cy="4" r="2" fill="#f0dce8"/>
+</svg>

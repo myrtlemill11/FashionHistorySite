@@ -14,6 +14,13 @@ namespace fashionHistorySite
         {
             RegisterJQueryScriptManager();
 
+            // trying to fix css stuff
+
+            /*bundles.Add(new StyleBundle("~/bundles/css").Include(
+                                 //"~/Content/css/bootstrap.min.css",
+                                 "~/Content/css/Site.css",
+                              "~/Content/css/jquery-ui-1.10.4.min.css"));
+            */
             bundles.Add(new ScriptBundle("~/bundles/WebFormsJs").Include(
                             "~/Scripts/WebForms/WebForms.js",
                             "~/Scripts/WebForms/WebUIValidation.js",

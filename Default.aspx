@@ -3,37 +3,39 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <main>
-         <!-- <embed src="../Content/wallpaper.xml" alt="Fashion History" width="1000" height="1000" /> -->
 <div id="placeholder" runat="server"></div>
 
-        <!-- <object data="../Content/wallpaper.svg" type="image/svg+xml" width="1000" height="1000"/> -->
+        <!-- Dress image -->
+        <embed src="../Images/dress.svg" id="dressPic" type="image/svg+xml" width="800" height="800" />
 
         <section class="row" aria-labelledby="aspnetTitle">
-            <h1 id="aspnetTitle">HAUTE HISTORY</h1>
-            <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-            <!--<p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p> -->
+            <!-- guide reader to scroll -->
+            <h1 id="titleWeb">The History of Fashion</h1> 
+            <h2 class="lead">From antiquity to the present day</h2>
+
+            <p id="scrollMessage">scroll</p>
+            
         </section>
 
         <div class="row">
             <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-                <h2 id="gettingStartedTitle">Getting started</h2>
-                <p>
-                    ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-                A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-                </p>
+                <p id="gettingStartedTitle">The Collection</p>
+                <h1>
+                    Centuries of style
+                </h1>
             </section>
-            <section class="col-md-4" aria-labelledby="librariesTitle">
-                <h2 id="librariesTitle">Get more libraries</h2>
-                <p>
-                    NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-                </p>
-            </section>
+            <!-- <section class="timeline" aria-labelledby="librariesTitle"> -->
+                <div class="grid">
+                    <a href="../Images/dress.svg">1</a>
+                    <a>2</a>
+                    <a>3</a>
+                    <a>4</a>
+                    <a>5</a>
+                    <a>6</a>
+
+                    <p id="par">wer</p>
+                </div>
+            <!-- </section> -->
             <section class="col-md-4" aria-labelledby="hostingTitle">
                 <h2 id="hostingTitle">Web Hosting</h2>
                 <p>
