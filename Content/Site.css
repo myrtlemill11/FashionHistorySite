@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-﻿
-=======
->>>>>>> 8caebf9b0001abd66ea93b68b89bfa4b77ceaf08
+
 body {
     background-image: url('../Images/wallpaper.svg');
     background-size: cover;
@@ -12,10 +9,7 @@ body {
     min-width: 100%;
     margin: 0;
     color: #f0e4d0;
-<<<<<<< HEAD
     font-family: 'Baskerville Old Face';
-=======
->>>>>>> 8caebf9b0001abd66ea93b68b89bfa4b77ceaf08
 }
 
 #dressPic {
@@ -44,7 +38,6 @@ body {
 /*Setting up the navigation bar situation*/
 .navbar-brand {
     color: #f0e4d0;
-<<<<<<< HEAD
     font-family:'Vladimir Script';
     text-decoration:none;
     font-size:50px;
@@ -52,41 +45,34 @@ body {
 }
 .nav li {
     display: inline-block;
-=======
-    position:fixed;
->>>>>>> 8caebf9b0001abd66ea93b68b89bfa4b77ceaf08
+
 }
 
     .navbar-brand:hover {
         background-color: #111111;
-<<<<<<< HEAD
-=======
+
         justify-content: space-between;
->>>>>>> 8caebf9b0001abd66ea93b68b89bfa4b77ceaf08
+
         color: azure;
     }
 
 ul {
-<<<<<<< HEAD
+
     list-style-type:none;
     position: sticky;
     top: 0px;
     overflow: hidden;
-=======
     list-style-type: none;
-    position: center;
     top: -16px;
     right: -1000px;
     margin: 0;
     padding: 0;
-    display: flex;
     color: azure;
-    display: flex;
     height: 4rem;
     align-items: center;
     width: 100%;
     border-radius: 10px;
->>>>>>> 8caebf9b0001abd66ea93b68b89bfa4b77ceaf08
+
 }
 /*ul a {
     float: right;
@@ -163,6 +149,11 @@ html.wizmage-running > body {
     border: 1px solid black;
 }
 
+
+
+
+
+
     .grid a {
         /* so we can position our shiny gradient *relative* to the button itself */
         position: relative;
@@ -175,22 +166,27 @@ html.wizmage-running > body {
         text-align: center;
         color: antiquewhite;
         text-decoration: none;
+        cursor: pointer;
+        width: 300px;
+        height: 100px;
     }
 
         .grid a::after {
             /* all pseudo-elements need "content" to work. We'll make it empty here */
-            content: '';
+            content: "";
             position: absolute;
-            width: 40px;
-            height: 40px;
-            /* make sure the gradient isn't too bright */
-            opacity: 0.6;
+            top: calc(var(--y, 0) * 1px - 50px);
+            left: calc(var(--x, 0) * 1px - 50px);
+            width: 100px;
+            height: 100px;
             /* add a circular gradient that fades out on the edges */
             background: radial-gradient(white, #3984ff00 80%);
             /*
             background-color: rgba(48, 16, 36, 0.9);*/
+            opacity: 0;
+            transition: opacity 0.2s;
         }
-=======
-*/ 
+        .grid a:hover::after {
+            opacity: 0.4;
+        }
     
->>>>>>> 8caebf9b0001abd66ea93b68b89bfa4b77ceaf08

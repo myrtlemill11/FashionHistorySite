@@ -33,7 +33,6 @@
                     <a>5</a>
                     <a>6</a>
 
-                    <p id="par">wer</p>
                 </div>
             <!-- </section> -->
             <section class="col-md-4" aria-labelledby="hostingTitle">

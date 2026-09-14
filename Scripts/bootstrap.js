@@ -3,6 +3,28 @@
   * Copyright 2011-2022 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
+
+// grid shine
+const grids = document.querySelectorAll(".grid a");
+
+grids.forEach(grid => {
+  if (!grid) return;
+
+  grid.addEventListener("mousemove", e => {
+    const { x, y } = grid.getBoundingClientRect();
+    // use clientX / clientY and set CSS vars as strings
+    grid.style.setProperty("--x", String(e.clientX - x));
+    grid.style.setProperty("--y", String(e.clientY - y));
+  });
+
+  grid.addEventListener("mouseleave", () => {
+    // move the shine offscreen when pointer leaves
+    grid.style.setProperty("--x", "-999");
+    grid.style.setProperty("--y", "-999");
+  });
+});
+
+
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@popperjs/core')) :
   typeof define === 'function' && define.amd ? define(['@popperjs/core'], factory) :
