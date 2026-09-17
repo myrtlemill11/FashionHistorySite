@@ -24,26 +24,14 @@
                     Centuries of style
                 </h1>
             </section>
-            <!-- <section class="timeline" aria-labelledby="librariesTitle"> -->
                 <div class="grid">
-                    <a href="../Images/dress.svg">1</a>
-                    <a>2</a>
-                    <a>3</a>
-                    <a>4</a>
-                    <a>5</a>
-                    <a>6</a>
-
+                    <a href="../Images/dress.svg">Ancient & Classical</a>
+                    <a>Medieval</a>
+                    <a>Renaissance</a>
+                    <a>Baroque & Rococo</a>
+                    <a>The Long Nineteenth Century</a>
+                    <a>The Modern Age</a>
                 </div>
-            <!-- </section> -->
-            <section class="col-md-4" aria-labelledby="hostingTitle">
-                <h2 id="hostingTitle">Web Hosting</h2>
-                <p>
-                    You can easily find a web hosting company that offers the right mix of features and price for your applications.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-                </p>
-            </section>
         </div>
     </main>
 

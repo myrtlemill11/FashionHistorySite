@@ -1,15 +1,14 @@
 
 body {
-    background-image: url('../Images/wallpaper.svg');
+    background: url('../Images/wallpaper.svg') no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     min-height: 100vh;
     height: 100%;
     min-width: 100%;
     margin: 0;
     color: #f0e4d0;
     font-family: 'Baskerville Old Face';
+    padding-bottom: 50px;
 }
 
 #dressPic {
@@ -145,8 +144,7 @@ html.wizmage-running > body {
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: #220d18;
-    padding: 10px;
-    border: 1px solid black;
+    font-family: 'Vladimir Script';
 }
 
 
@@ -155,6 +153,12 @@ html.wizmage-running > body {
 
 
     .grid a {
+        /*border between*/
+        border: solid;
+        border-color: black;
+        /*Size*/
+        width: 375px;
+        height: 100px;
         /* so we can position our shiny gradient *relative* to the button itself */
         position: relative;
         /* then, make sure our shiny effect */
@@ -166,19 +170,19 @@ html.wizmage-running > body {
         text-align: center;
         color: antiquewhite;
         text-decoration: none;
+        text-justify: auto;
         cursor: pointer;
-        width: 300px;
-        height: 100px;
+        
     }
 
         .grid a::after {
             /* all pseudo-elements need "content" to work. We'll make it empty here */
             content: "";
             position: absolute;
-            top: calc(var(--y, 0) * 1px - 50px);
-            left: calc(var(--x, 0) * 1px - 50px);
-            width: 100px;
-            height: 100px;
+            top: calc(var(--y, 0) * 1px - 100px);
+            left: calc(var(--x, 0) * 1px - 100px);
+            width: 200px;
+            height: 200px;
             /* add a circular gradient that fades out on the edges */
             background: radial-gradient(white, #3984ff00 80%);
             /*
