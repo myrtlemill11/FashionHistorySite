@@ -173,6 +173,11 @@ html.wizmage-running > body {
         text-justify: auto;
         cursor: pointer;
         
+        
+    }
+
+    .box_text{
+        font-size:10px;
     }
 
         .grid a::after {
@@ -194,3 +199,17 @@ html.wizmage-running > body {
             opacity: 0.4;
         }
     
+        /* Columns and rows setup - for 3 columns*/
+        
+        .column {
+            float: left;
+            width: 33.33%;
+        }
+
+        /* Clear floats after the columns */
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }

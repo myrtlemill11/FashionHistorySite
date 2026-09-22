@@ -26,7 +26,10 @@
             </section>
                 <div class="grid">
                     <a href="../Images/dress.svg">Ancient & Classical</a>
-                    <a>Medieval</a>
+                    <a>
+                        <p>Medieval</p>
+                        <!-- <p class="box_text">Draped linen and wool defined Egyptian, Greek, and Roman civilizations. Clothing revealed divine rank; the pleated kalasiris and draped Greek chiton established the vocabulary of Western dress.</p> -->
+                    </a>
                     <a>Renaissance</a>
                     <a>Baroque & Rococo</a>
                     <a>The Long Nineteenth Century</a>
